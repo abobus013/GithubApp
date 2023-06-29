@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">GitHubApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sing_in_with_github_txt">SING IN WITH GITHUB</string>
+    <string name="sing_in_with_github_enterprise_txt">SING IN WITH GITHUB ENTERPRISE</string>
+    <string name="by_signing_in_you_accept_our_txt">By signing in you accept our</string>
+    <string name="terms_of_use_txt">Terms of use</string>
+    <string name="privacy_policy_txt">Privacy Policy</string>
+    <string name="and_txt">and</string>
+    <string name="home_txt">Home</string>
+    <string name="notification_txt">Notificati...</string>
+    <string name="explore_txt">Explore</string>
+    <string name="profile_txt">Profile</string>
+    <string name="my_work_txt">My Work</string>
+    <string name="issues_txt">Issues</string>
+    <string name="pull_requests_txt">Pull Requests</string>
+    <string name="discussions_txt">Discussions</string>
+    <string name="repositories_txt">Repositories</string>
+    <string name="organizations_txt">Organizations</string>
+    <string name="starred_txt">Starred</string>
+    <string name="notifications">Notifications</string>
+    <string name="inbox_txt">Inbox</string>
+    <string name="unread_txt">Unread</string>
+    <string name="repository">Repository</string>
+    <string name="favorites_txt">Favorites</string>
+    <string name="icons_description">The things you need, one tap away</string>
+    <string name="tv_favorite_description_txt">Add favorite repositories for quick access at any time, without having to search</string>
+    <string name="add_favorites_txt">Add Favorites</string>
+    <string name="shortcuts_txt">Shortcuts</string>
+    <string name="icons_description_txt">Fast access your lists of Issues, Pull Requests, or Discussions</string>
+    <string name="get_started_txt">Get Started</string>
+    <string name="my_id">atabek013</string>
+    <string name="id_description">abobus013 · he/him</string>
+    <string name="my_followers">1 follower · 3 following</string>
+
+    <string name="auth_login">Войти</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
+    <string name="corrupt_access_token">Corrupt access token</string>
+    <string name="get_user_info">Get user info</string>
+    <string name="get_user_error">Get user error</string>
+    <string name="logout">logout</string>
+</resources>
