@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,7 +18,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name="com.example.githubapp.ui.MainActivity"
+            android:name="com.example.githubapp.MainActivity"
             android:exported="true">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
@@ -26,16 +27,16 @@
 
                 </intent-filter>
 
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
-<!--                <data-->
-<!--                    android:host="callback"-->
-<!--                    android:scheme="mygithubapp" />-->
-<!--            </intent-filter>-->
+                <data
+                    android:host="callback"
+                    android:scheme="githubapps" />
+            </intent-filter>
 
 
         </activity>

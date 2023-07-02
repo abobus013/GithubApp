@@ -33,11 +33,5 @@
     <string name="my_id">atabek013</string>
     <string name="id_description">abobus013 · he/him</string>
     <string name="my_followers">1 follower · 3 following</string>
-
-    <string name="auth_login">Войти</string>
-    <string name="auth_canceled">Аутентификация не выполнена</string>
-    <string name="corrupt_access_token">Corrupt access token</string>
-    <string name="get_user_info">Get user info</string>
-    <string name="get_user_error">Get user error</string>
-    <string name="logout">logout</string>
+    <string name="projects_txt">Projects</string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.MainFragment">
+    tools:context=".presentation.fragments.MainFragment">
 
     <View
         android:id="@+id/top_bar"
@@ -90,7 +90,7 @@
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="18dp"
                 android:background="@drawable/background_green"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_circle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_title"
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/background_blue"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_data"
                 app:layout_constraintEnd_toEndOf="@id/iv_issues"
                 app:layout_constraintStart_toStartOf="@id/iv_issues"
@@ -143,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/background_purple"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_message"
                 app:layout_constraintStart_toStartOf="@id/iv_pullRequest"
                 app:layout_constraintTop_toBottomOf="@id/iv_pullRequest"
@@ -164,15 +164,41 @@
 
 
             <ImageView
-                android:id="@+id/iv_repositories"
+                android:id="@+id/iv_project"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/background_black"
-                android:padding="6dp"
-                android:src="@drawable/ic_repo"
+                android:background="@drawable/background_grey"
+                android:padding="8dp"
+                android:src="@drawable/ic_project"
                 app:layout_constraintStart_toStartOf="@id/iv_discussions"
-                app:layout_constraintTop_toBottomOf="@id/tv_discussions"
+                app:layout_constraintTop_toBottomOf="@id/iv_discussions"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/projects_txt"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_project"
+                app:layout_constraintStart_toEndOf="@id/iv_project"
+                app:layout_constraintTop_toTopOf="@id/iv_project" />
+
+
+            <ImageView
+                android:id="@+id/iv_repositories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_black"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_repo"
+                app:layout_constraintEnd_toEndOf="@+id/iv_project"
+                app:layout_constraintTop_toBottomOf="@+id/iv_project"
                 app:tint="@color/white" />
 
             <TextView
@@ -195,7 +221,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/background_orange"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_organization"
                 app:layout_constraintStart_toStartOf="@id/iv_repositories"
                 app:layout_constraintTop_toBottomOf="@id/tv_repositories"
@@ -221,7 +247,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/background_yellow"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_star"
                 app:layout_constraintStart_toStartOf="@id/iv_organization"
                 app:layout_constraintTop_toBottomOf="@id/iv_organization"

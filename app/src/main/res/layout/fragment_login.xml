@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    tools:context=".presentation.fragments.LoginFragment">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_github"
+        app:layout_constraintBottom_toTopOf="@id/btn_singIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_singIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/bg_radius6"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/rubik"
+        android:text="@string/sing_in_with_github_txt"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_singIn_with"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bg_radius6"
+        android:backgroundTint="@color/white"
+        android:text="@string/sing_in_with_github_enterprise_txt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/by_signing_in_you_accept_our_txt"
+        android:textSize="14sp"
+        android:fontFamily="@font/rubik"
+        app:layout_constraintStart_toStartOf="@id/btn_singIn_with"
+        app:layout_constraintTop_toBottomOf="@id/btn_singIn_with" />
+
+    <TextView
+        android:id="@+id/tv_link_firs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/terms_of_use_txt"
+        android:fontFamily="@font/rubik"
+        tools:textColor="#1976D2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_first"
+        app:layout_constraintStart_toEndOf="@id/tv_first"
+        app:layout_constraintTop_toTopOf="@id/tv_first" />
+
+    <TextView
+        android:id="@+id/tv_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/and_txt"
+        android:fontFamily="@font/rubik"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_link_firs"
+        app:layout_constraintStart_toEndOf="@+id/tv_link_firs"
+        app:layout_constraintTop_toTopOf="@+id/tv_link_firs" />
+
+    <TextView
+        android:id="@+id/tv_link_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy_txt"
+        android:fontFamily="@font/rubik"
+        app:layout_constraintTop_toBottomOf="@id/tv_first"
+        app:layout_constraintStart_toStartOf="@id/tv_first"
+        app:layout_constraintEnd_toEndOf="@id/tv_second"
+        android:textColor="#1976D2"
+        android:paddingTop="4dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
