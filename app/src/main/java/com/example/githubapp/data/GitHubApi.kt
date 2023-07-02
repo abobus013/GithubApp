@@ -1,7 +1,8 @@
 package com.example.githubapp.data
 
 import com.example.githubapp.data.models.GetAccessResponseData
-import com.example.githubapp.data.models.RepositoryPayloadData
+import com.example.githubapp.data.models.GetUserInfo
+import com.example.githubapp.data.models.RepositoryResponseData
 import retrofit2.Response
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -22,6 +23,6 @@ interface GitHubApi {
 
 
     @GET("/user")
-    suspend fun getUserRepositories(token: String): Response<GenericResponseData<MutableList<RepositoryPayloadData>>>
+    suspend fun getUserRepositories(token: String): Response<GenericResponseData<MutableList<GetUserInfo>>>
 
 }

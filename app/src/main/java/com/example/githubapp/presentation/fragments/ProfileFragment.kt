@@ -1,11 +1,12 @@
 package com.example.githubapp.presentation.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.githubapp.MainActivity
 import com.example.githubapp.R
-import com.example.githubapp.data.models.RepositoryPayloadData
+import com.example.githubapp.data.models.GetUserInfo
 import com.example.githubapp.databinding.FragmentProfileBinding
 import com.example.githubapp.presentation.MainViewModel
 import com.example.githubapp.presentation.adapter.GithubAdapter
@@ -28,8 +29,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
         adapter = GithubAdapter()
         binding.recyclerView.adapter = adapter
-
-        val repositoriesDataList = mutableListOf<RepositoryPayloadData>()
+//
+        val repositoriesDataList = mutableListOf<GetUserInfo>()
         adapter.models = repositoriesDataList
 
         initObserversGetRepository()
@@ -47,6 +48,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         }
 
         viewModel.getRepositorySuccessLiveData.observe(requireActivity()) {
+
+            Log.d("ProfileFragment", "Received data: $it")
             adapter.models = it!!
         }
 

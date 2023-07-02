@@ -15,10 +15,12 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        startKoin {
-            modules(listOf(appModule, dataModule, networkModule))
-            androidContext(this@App)
-        }
 
+
+        startKoin {
+            androidContext(androidContext = this@App)
+
+            modules(listOf(appModule, dataModule, networkModule))
+        }
     }
 }

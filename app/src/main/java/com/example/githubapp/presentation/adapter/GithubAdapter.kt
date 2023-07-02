@@ -4,12 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.githubapp.data.models.RepositoryPayloadData
+import com.example.githubapp.data.models.GetUserInfo
+import com.example.githubapp.data.models.RepositoryResponseData
 import com.example.githubapp.databinding.ItemLayoutBinding
 
 class GithubAdapter : RecyclerView.Adapter<GithubAdapter.GitViewHolder>() {
 
-    var models = mutableListOf<RepositoryPayloadData>()
+    var models = mutableListOf<GetUserInfo>()
         set(value) {
             field = value
             notifyDataSetChanged()
@@ -33,10 +34,10 @@ class GithubAdapter : RecyclerView.Adapter<GithubAdapter.GitViewHolder>() {
             val data = models[position]
 
             Glide.with(binding.root.context)
-                .load(data.profileData.avatar_url)
+                .load(data.avatar_url)
                 .into(binding.ivPhoto)
 
-            binding.tvName.text = data.profileData.login
+            binding.tvName.text = data.login
             binding.tvAppName.text = data.name
 
         }
